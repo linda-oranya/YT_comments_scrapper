@@ -45,6 +45,7 @@ class YtScrapper:
 
         if request.status_code != 200:
             raise OSError("Invalid response")
+        return 200
         
                     
     def scrape_comments(self) -> pd.DataFrame:
@@ -52,7 +53,7 @@ class YtScrapper:
         Scrapes the comments from the YouTube link url
         """
         data=[]
-        if self.match_youtube_url() == True & self.check_video_url()==200:
+        if self.match_youtube_url() == True and self.check_video_url() == 200:
 
             with Chrome(executable_path=self.chromedriverpath) as driver:
                 wait = WebDriverWait(driver,15)

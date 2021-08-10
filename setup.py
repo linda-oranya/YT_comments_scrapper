@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="YT_comments_scrapper",
-    version="0.1",
+    version="0.2",
     author="Linda Oranya",
     author_email="oranyalinda7@gmail.com",
     description="YouTube comments scrapper",
