@@ -65,7 +65,7 @@ class YtScrapper:
 
                 for comment in wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#content"))):
                     data.append(comment.text)
+            df = pd.DataFrame(data, columns=['comment'])
         else:
             raise ValueError("Expected a Youtube url")
-        df = pd.DataFrame(data, columns=['comment'])
         return df
