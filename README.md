@@ -11,7 +11,7 @@ $ pip install git+https://github.com/linda-oranya/YT_comments_scrapper.git
 ```
 
 ``` shell 
-$ pip install YT_comments_scrapper
+$ pip install YT-comments-scrapper
 ```
 
 Usage
